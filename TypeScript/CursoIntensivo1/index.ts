@@ -46,13 +46,36 @@ avengers.forEach(avengers => {
     console.log(avengers.toUpperCase())
 })
 
-
-
 // Objetos
 
-let hero = {
+// type alias
+
+// optional properties
+
+type HeroId = `${string}-${string}-${string}-${string}-${string}`
+
+
+type Hero = {
+    readonly id?: HeroId
+    name: string
+    age: number
+    isActive?: boolean
+}
+
+let hero: Hero = {
     name: 'thor',
     age: 1500
 };
 
-hero.age = 15001
+function createHero(hero: Hero): Hero {
+    const { name, age } = hero
+    return { id: crypto.randomUUID(), name, age, isActive: true }
+}
+
+const thor = createHero({ name: 'Thor', age: 1500 })
+console.log (thor.isActive)
+
+thor.id?.toString()
+
+// thor.id = 218378127381723213
+// type hero = heroBasicInfo & heroPropertis                    
