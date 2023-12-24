@@ -8,30 +8,29 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/header.css">
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-            <a href="#">
-                <img class="header__logo--img" src="img/xd.png" alt="">
-                <h2>BnjmnDev</h2>
-            </a>
-        </div>
+    <header class="header">
+        <a href="#" class="header__link">
+            <img class="header__img" src="img/xd.jpg" alt="Logo">
+            <h2 class="header__text">BnjmnDev</h2>
+        </a>
         <nav class="menu">
-            <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> About me </a></li>
-                <li><a href="#"> Contact </a></li>
+            <ul class="menu_list">
+                <li class="menu_link"><a href="#"> Home </a></li>
+                <li class="menu_link"><a href="#"> About me </a></li>
+                <li class="menu_link"><a href="#"> Contact </a></li>
             </ul>
         </nav>
     </header> 
     
     <main>
         <section class="hero">
-            <div>
-                <h1>
+            <div class="hero__container">
+                <h1 class="hero__title">
                     Bioinformatics lov 
-                    <h3>
+                    <h3 class="hero_description">
                         Developer
                     </h3>
                 </h1>
@@ -39,43 +38,59 @@
         </section>
 
         <section class="skills">
-            <h1>Skills</h1>
-            <div class="card"> <iconify-icon icon="logos:html-5" width="50" ></iconify-icon> </div>
-            <h3>Html</h3>
-            <div class="card"> <iconify-icon icon="devicon:linux" width="50" ></iconify-icon> </div>
-            <h3>Linux</h3>
-            <div class="card"> <iconify-icon icon="devicon:astro" width="50" ></iconify-icon> </div>
-            <h3>Astro</h3>
-            <div class="card"> <iconify-icon icon="logos:python" width="50" ></iconify-icon> </div>
-            <h3>Python</h3>
+            <h1 class="skills__title">Skills</h1>
+            <div class="card"> 
+                <iconify-icon class="card__icon" icon="logos:html-5" width="50" ></iconify-icon> 
+                <h3 class="card__description">Html</h3>
+            </div>
+            <div class="card"> 
+                <iconify-icon class="card__icon" icon="devicon:linux" width="50" ></iconify-icon> 
+                <h3 class="card__description" >Linux</h3>
+            </div> 
+            <div class="card"> 
+                <iconify-icon class="card__icon" icon="devicon:astro" width="50" ></iconify-icon> 
+                <h3 class="skill__description" >Astro</h3>
+            </div>
+            <div class="card"> 
+                <iconify-icon class="skill__icon" icon="logos:python" width="50" ></iconify-icon>
+                <h3 class="skill__description" >Python</h3>
+            </div>
         </section>
 
         <section class="contacto">
-            <form action="#">
-                <label for="name" >Nombre</label>
-                <input type="text" placeholder="Tu nombre" name="name">
-                <label for="email">Correo electrónico</label>
-                <input type="email" placeholder="Email" name="email">
-                <label for="message">Mensaje</label>
-                <textarea placeholder="Mensaje" name="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
+            <form action="#" class="formulario">
+                <label class="formulario__label" for="name" >Nombre</label>
+                <input  class="formulario__input" type="text" placeholder="Tu nombre" name="name" id="name">
+                <label class="formulario__label" for="email">Correo electrónico</label>
+                <input  class="formulario__input" type="email" placeholder="Email" name="email" id="email">
+                <label class="formulario__label" for="message">Mensaje</label>
+                <textarea placeholder="Mensaje" name="message" cols="30" rows="10" id="message"></textarea>
+                <input class="formulario__btn"  type="submit" value="Enviar">
             </form>
         </section>
     </main> 
 
-    <footer>
-        <div class="logo"></div>
-        <a href="#">
-            <img class="header__logo--img" src="img/xd.png" alt="">
+    <footer class="footer">
+        <div class="footer_container footer_container--logo"></div>
+        <a href="#" class="footer__link">
+            <img class="footer__img" src="img/xd.jpg" alt="">
             <h2>BnjmnDev</h2>
         </a>
-        <div class="links"></div>
+        <div class="footer_container footer_container--links"></div>
         <ul>
-            <li><a href="#">Acerc de mi</a></li>
-            <li><a href="#">Patata</a></li>
-            <li><a href="#">Ref</a></li>
+            <li class="footer__link">
+                <a href="#">Acerc de mi</a>
+            </li>
+            <li lass="footer__link">
+                <a href="#">Patata</a>
+            </li>
+            <li lass="footer__link">
+                <a href="#">Ref</a>
+            </li>
         </ul>
-        <div class="social"></div>
+        <div class="footer_container footer_container--social">
+
+        </div>
     </footer>
 </body>
 </html>
