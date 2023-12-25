@@ -1,0 +1,32 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 15rem;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero__description{
+    display: flex;
+}
+
+.hero__title{
+    font-size: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero__img{
+    width: 33%;
+    border-radius: 50%;
+}
+

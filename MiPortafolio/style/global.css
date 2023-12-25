@@ -9,6 +9,7 @@ html{
     rem = 16px entonces 1 rem, no hereda el tamaño del padre.
     La diferenia que em puede variar*/
     font-size: 62.5%; /*1 rem es 14 pixeles*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 a{

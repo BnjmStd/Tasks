@@ -3,12 +3,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: aqua;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: black(12px);
+    background-color: rgb(115, 111, 111);
     position: fixed;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+    z-index: 1000
 }
 
 .header__link{
