@@ -6,6 +6,7 @@
     height: 100vh;
     flex-wrap: wrap;
     gap: 10rem;
+    background-color: #7BD3EA;
 }
 
 .hero__container{
@@ -15,7 +16,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
 
 .hero__title{
     font-size: 8rem;
